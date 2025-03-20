@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('e2e fill Inn', async ({ page }) => {
-  await page.goto('https://localhost:4200/');
+  await page.goto('http://localhost:4200/');
 
   await expect(page).toHaveTitle(/Umzugsanfrage/);
 
