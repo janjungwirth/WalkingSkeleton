@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+mat-card-title,mat-card-subtitle,mat-form-field{
+  padding: 10px;
+}
+
