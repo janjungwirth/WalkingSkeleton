@@ -64,7 +64,7 @@ export class AppComponent {
       }
     };
 
-    this.http.post('localhost:3200/api/dein-endpunkt', payload).subscribe({
+    this.http.post('http://localhost:8080/umzug', payload).subscribe({
       next: () => {
         this.showSuccess = true;
         this.showError = false;

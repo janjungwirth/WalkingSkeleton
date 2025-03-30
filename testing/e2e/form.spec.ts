@@ -34,5 +34,5 @@ test('should fill and submit the form successfully', async ({ page }) => {
     await expect(page.locator('.success')).toContainText('erfolgreich');
 
     // Optional: check if fields are cleared
-    await expect(page.getByPlaceholder('Vorname')).toHaveValue('Jan');
+    await expect(page.getByPlaceholder('Vorname')).toHaveValue('');
 });
