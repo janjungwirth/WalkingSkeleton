@@ -6,12 +6,12 @@
       <mat-card-content>
         <mat-form-field class="form-vorname">
           <mat-label>Vorname</mat-label>
-          <input matInput placeholder="Vorname" formControlName="vorname">
+          <input matInput placeholder="Vorname" formControlName="vorname" />
         </mat-form-field>
 
         <mat-form-field class="form-nachname">
           <mat-label>Nachname</mat-label>
-          <input matInput placeholder="Nachname" formControlName="nachname">
+          <input matInput placeholder="Nachname" formControlName="nachname" />
         </mat-form-field>
       </mat-card-content>
 
@@ -19,27 +19,26 @@
       <mat-card-content>
         <mat-form-field class="form-date">
           <mat-label>Datum</mat-label>
-          <input matInput placeholder="Datum" formControlName="date">
+          <input matInput placeholder="Datum" formControlName="date" />
         </mat-form-field>
       </mat-card-content>
       <mat-card-subtitle>Adressen</mat-card-subtitle>
       <mat-card-content formArrayName="location">
-
         <!-- VON-Adresse -->
         <div [formGroupName]="0">
           <mat-form-field class="vonPLZ">
             <mat-label>Von PLZ</mat-label>
-            <input matInput placeholder="vonPLZ" formControlName="plz">
+            <input matInput placeholder="vonPLZ" formControlName="plz" />
           </mat-form-field>
 
           <mat-form-field class="vonStrasse">
             <mat-label>Von Straße</mat-label>
-            <input matInput placeholder="vonStrasse" formControlName="street">
+            <input matInput placeholder="vonStrasse" formControlName="street" />
           </mat-form-field>
 
           <mat-form-field class="vonOrt">
             <mat-label>Von Ort</mat-label>
-            <input matInput placeholder="vonOrt" formControlName="city">
+            <input matInput placeholder="vonOrt" formControlName="city" />
           </mat-form-field>
         </div>
 
@@ -47,50 +46,39 @@
         <div [formGroupName]="1">
           <mat-form-field class="zuPLZ">
             <mat-label>Zu PLZ</mat-label>
-            <input matInput placeholder="zuPLZ" formControlName="plz">
+            <input matInput placeholder="zuPLZ" formControlName="plz" />
           </mat-form-field>
 
           <mat-form-field class="zuStrasse">
             <mat-label>Zu Straße</mat-label>
-            <input matInput placeholder="zuStrasse" formControlName="street">
+            <input matInput placeholder="zuStrasse" formControlName="street" />
           </mat-form-field>
 
           <mat-form-field class="zuOrt">
             <mat-label>Zu Ort</mat-label>
-            <input matInput placeholder="zuOrt" formControlName="city">
+            <input matInput placeholder="zuOrt" formControlName="city" />
           </mat-form-field>
         </div>
-
       </mat-card-content>
-
 
       <mat-card-subtitle>Zusatz Infos</mat-card-subtitle>
       <mat-card-content>
         <mat-form-field class="form-amount">
           <mat-label>Maenge</mat-label>
-          <input matInput placeholder="Maenge" formControlName="amount">
+          <input matInput placeholder="Maenge" formControlName="amount" />
         </mat-form-field>
 
         <mat-checkbox formControlName="packaging">Verpackung</mat-checkbox>
       </mat-card-content>
 
-
       <!-- Absende Button -->
       <mat-card-actions>
-        <button mat-raised-button color="primary" type="submit" placeholder="Absenden">
-          Absenden
-        </button>
+        <button mat-raised-button color="primary" type="submit" placeholder="Absenden">Absenden</button>
       </mat-card-actions>
-
     </form>
   </mat-card>
-  <div *ngIf="showSuccess" class="success">
-    ✅ Daten wurden erfolgreich übermittelt!
-  </div>
-  <div *ngIf="showError" class="error">
-    ❌ Fehler beim Absenden der Daten!
-  </div>
+  <div *ngIf="showSuccess" class="success">✅ Daten wurden erfolgreich übermittelt!</div>
+  <div *ngIf="showError" class="error">❌ Fehler beim Absenden der Daten!</div>
 </div>
 
-
-<router-outlet/>
+<router-outlet />
