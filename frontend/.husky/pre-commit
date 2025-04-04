@@ -1,4 +1,1 @@
-npm test
-ng test
-npm run lint:fix
-npm run format:fix
+npx lint-staged

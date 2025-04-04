@@ -13,6 +13,10 @@
     "format:fix": "npx prettier src --write",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "**/*.{ts}": ["eslint --fix"],
+    "**/*.{html,scss,json,md}": ["prettier --write"]
+  },
   "private": true,
   "dependencies": {
     "@angular/cdk": "^19.2.4",
